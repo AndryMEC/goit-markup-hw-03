@@ -384,4 +384,5 @@ padding-bottom: 210px;
 
 .border {
     border: 1px solid #EEEEEE;
+    border-top: 0;
 }
