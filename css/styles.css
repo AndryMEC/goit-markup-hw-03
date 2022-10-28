@@ -1,0 +1,379 @@
+:root {
+    --hover-color: rgb(33, 150, 243);
+    --white: rgb(255, 255, 255);
+    --link-list-text: rgb(117, 117, 117);
+    --main-title: rgb(33, 33, 33);
+    --head-footer-bg: rgb(47, 48, 58);
+    --logo: rgb(0, 0, 0);
+    --teem-bg: rgb(245, 244, 250);
+    --pf-filter: rgb(245, 245, 245);
+    
+    --footer-contact: rgba(255, 255, 255, 0.6);
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+margin: 0;
+}
+
+h1, 
+h2, 
+h3, 
+p {
+    margin: 0;
+    
+}
+
+img {
+    display: block;
+}
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.button {
+    border: none;
+}
+
+.header {
+
+    background-color: var(--white);
+}
+
+.header-logo {
+    font-family: raleway;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--logo);
+
+}
+
+.logo-web {
+    color: var(--hover-color);
+}
+
+.header-list {
+    display: flex;
+    margin-left: 93px;
+}
+
+.header-list .list-item {
+    margin-right: 50px;
+}
+
+.header-list .list-item:last-child {
+    margin-right: 0;
+}
+
+.contact {
+    display: flex;
+    margin-left: 344px;
+}
+
+.contact .list-item + .list-item {
+    margin-left: 48px;
+}
+
+.header-list-link {
+    display: block;
+    padding-top: 31px;
+    padding-bottom: 31px;
+
+    color: var(--main-title);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.333;
+    letter-spacing: 0.02em;
+}
+
+
+.header-list-link:hover,
+.header-list-link:focus,
+.header-list-link.current {
+    color: var(--hover-color);
+}
+
+.contact-link {
+    display: block;
+    padding-top: 31px;
+    padding-bottom: 31px;
+
+    color: var(--link-list-text);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.333;
+
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--hover-color);
+}
+
+/* Main*/
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.main-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 1600px;
+    background: var(--head-footer-bg);
+    ;
+}
+
+.main-title {
+    color: var(--white);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    width: 696px;
+    min-height: 120px;
+    padding-top: 200px;
+    margin-bottom: 30px;
+
+}
+
+.header-button {
+    background-color: var(--hover-color);
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    border-radius: 4px;
+    padding: 10px 32px;
+    margin-bottom: 200px;
+}
+
+.benefits {
+    display: flex;
+}
+
+.benefits .benefits-item + .benefits-item {
+    margin-left: 30px;
+}
+
+.list-title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.list-text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--link-list-text);
+    letter-spacing: 0.03em;
+    width: 270px;
+}
+
+
+.second-title {
+    color: var(--main-title);
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.buisness {
+    padding-top: 0;
+}
+
+.buisness-img {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+.teem {
+    background-color: var(--teem-bg);
+}
+
+.list-teem {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    
+}
+
+.teem-item {
+    background-color: var(--white);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.teem-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--main-title);
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 30px;
+}
+
+.teem-text {
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--link-list-text);
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--head-footer-bg);
+}
+
+.footer-logo {
+    font-family: raleway;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--white);
+    display: block;
+    padding-top: 60px;
+    width: 231px;
+}
+
+.footer-contact-link {
+    display: block;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--footer-contact);
+    letter-spacing: 0.03em;
+}
+
+.footer-contact-link {
+    padding-top: 9px;
+    width: 231px;
+}
+
+.contact-link-map {
+    color: var(--white);
+    padding-top: 20px;
+}
+
+.footer-contact-link:hover,
+.footer-contact-link:focus {
+    color: var(--white);
+}
+
+/* Portfolio */
+
+.main-filter {
+    color: var(--pf-filter);
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-button {
+    color: var(--main-title);
+    font-weight: 500;
+    line-height: 1.63;
+    background-color: var(--teem-bg);
+    cursor: pointer;
+    border-radius: 4px;
+    min-width: 73px;
+    padding: 6px 22px;
+    letter-spacing: 0.03em;
+}
+
+.btn-nav:not(:last-child) {
+    margin-right: 8px;
+}
+
+
+
+.filter-button:hover,
+.filter-button:focus {
+    color: var(--white);
+    background-color: var(--hover-color);
+}
+
+.filter-list {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.filter-item {
+    
+    margin-bottom: 30px;
+}
+
+.filter-item > .filter-link {
+    border: 0;
+}
+
+.filter-title {
+    color: var(--main-title);
+    font-size: 18px;
+    line-height: 2;
+    padding: 20px 24px 4px 24px;
+}
+
+.filter-text {
+    color: var(--link-list-text);
+    font-size: 16px;
+    line-height: 1.88;
+    padding: 0 24px 20px 24px;
+}
+
+.border {
+    border: 1px solid #EEEEEE;
+}
